@@ -11,6 +11,7 @@
     --font-family-bebas_neue: "Bebas Neue";
 }
 
+
 .bebasneue-normal-white-20px {
     color: var(--white);
     font-family: var(--font-family-bebas_neue);
@@ -20,21 +21,27 @@
 }
 
 body {
+    display: flex;
     font-size: 62.5%;
-    width: 90rem;
-	height: 64rem;
+    width: 127.25rem;
+    height: 100%;
+    padding-left: 18.625rem;
+    background: linear-gradient( 180deg, #02738d 5.76%, #187590 14.27%, #167d96 22.57%, #0183a1 28.77%, #048ca9 43.53%, #2c96b1 65.45%, #02a0c0 80.68%, #02a4c5 92.87%);
+    flex-direction: column;
+    flex-wrap: wrap;
+
 }
 
 .home {
     width: 90rem;
-	height: 64rem;
+	height: auto;
     position: relative;
-    background: linear-gradient(
-        180deg, #02738d 5.76%, #187590 14.27%, 
-        #167d96 22.57%, #0183a1 28.77%, 
-        #048ca9 43.53%, #2c96b1 65.45%, 
-        #02a0c0 80.68%, #02a4c5 92.87%);
-    background-color: rgba(255,255,255,1);
+    background: linear-gradient(rgb(0 114 142) -0.24%,
+    rgb(2 123 152) 10.27%, rgb(1 137 166) 24.57%, 
+    rgb(3 146 176) 33.77%, rgb(3 150 179) 41.53%, 
+    rgb(0 157 190) 45.45%, rgb(2 156 186) 46.68%, 
+    rgb(6 161 193) 56.87%) rgb(2 164 197) 18.01%, 
+    rgb(2 164 197) 18.01% ;
     border: 1px none;
     overflow: hidden;
     display: flex;
@@ -82,16 +89,31 @@ header {
     height: 4.125rem;   
     left: 9.375rem;
     top: 1.6875rem;
-    width: 71.125rem;
+    width: 73.425rem;
     position: fixed;
     font-family: var(--font-family-bebas_neue);
     font-size: var(--font-size-m);
-    color: #16e8fa;
+    color: #ffffff;
     font-weight: 400;
     line-height: 1.8125rem;
     text-align: center;
     z-index: 2;
-    
+}
+
+a:link {
+    color: white;
+}
+
+a:visited {
+    color: #ffffff;
+}
+
+a:hover .line, a:hover .headerComposants {
+    color: #16e8fa;
+}
+
+a:active {
+    color:#16e8fa;
 }
 
 .logo-name .name {
@@ -101,25 +123,28 @@ header {
 }
 
 .headerComposants {
-position: absolute;
 width: max-content;
 top: 1.625em;
 display: flex;
 align-items: center;
 }
 
+a { text-decoration: none; }
+
 .line {
 position: absolute;
 border-top: 3px solid;
-color: #16e8fa;
+color: #ffffff;
 top: 0.4125rem;
 }
 
 .menu {
     display: flex;
     flex-direction: row;
-    width: 30.375rem;
+    left: 59.8rem;
     gap: 1.8125rem;
+    align-items: center;
+    top: 0rem;
     justify-content: space-evenly;
 }
 
@@ -128,7 +153,7 @@ top: 0.4125rem;
 }
 
 #apropos {
-    width: 3.6875rem;
+    width: 3.08625rem;
 }
 
 #competences {
@@ -151,41 +176,119 @@ top: 0.4125rem;
     top: 1.6875rem;
 }
 
-/*.anglesFrame {
+
+.vector {
     position: absolute;
     width: 2.0625rem;
     height: 2.0625rem;
+
 }
 
-.vector {
-    position: relative;
-    width: 2.0625rem;
-    height: 2.0625rem;
-    border: 1px solid #FFFFFF;
+.vectorLeftUp {
+    border-left: 1px solid #FFFFFF;
+    border-top: 1px solid #FFFFFF;
+    border-right: none;
+    border-bottom: none;
 }
 
 #vectorLeftUp {
-    left: 1.375rem;
-    top: 1.6875rem
+    top: -0.05rem;
+    
 }
 
+.vectorLeftDown {
+    border-left: 1px solid #FFFFFF;
+    border-top: none;
+    border-bottom: 1px solid #FFFFFF;
+    border-right: none;
+}
 #vectorLeftDown {
-    left: 1.375rem;
-    top: 62.011875rem;
-    transform: rotate(-89.78deg);    
+    left: -0.01rem;
+    top: 58.3rem;
 }
 
-#vectorRightUp {
-    left: 88.0625rem;
-    top: 1.6875rem;
-    transform: matrix(-1, 0, 0, 1, 0, 0);
-}*/
+.vectorRightUp {
+    border-left: none;
+    border-top: 1px solid #FFFFFF;
+    border-right: 1px solid #FFFFFF;
+    border-bottom: none;
+}
+
+#vectorRightUp { 
+    left: 84.7rem;   
+    top: -0.05rem;
+}
+
+.vectorRigthDown {
+    border-left: none;
+    border-top: none;
+    border-bottom: 1px solid #FFFFFF;
+    border-right: 1px solid #FFFFFF;  
+}
 
 #vectorRigthDown {
-    left: 88.06255rem;
-    top: 62.011875rem;
-    transform: matrix(0, -1, -1, 0, 0, 0);    
+    left: 84.7rem;
+    top: 58.3rem;
 }
+
+.lateralLines {
+    position: absolute;
+    display: flex;
+    justify-content: space-evenly;
+    width: 90rem;
+    height: 1px;
+    left: 0px;
+    top: 45.5rem;
+}
+
+#lateralRightLine {
+    position: absolute;
+    width: 18.25rem;
+    height: 0px;
+    left: 71.75rem;
+    border: 2px solid #FFFFFF;
+
+}
+
+.centralLines {
+    position: absolute;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    width: 0.1875rem;
+    height: 60.4rem;
+    left: 45rem;
+    top: -28px;
+    
+}
+
+.centralUpLine {
+    position: absolute;
+    width: 0.125rem;
+    height: 9.4375rem;
+    transform: rotate(359deg);
+    background: linear-gradient(#a8dcf2,#ffffff00);
+}
+
+.centralDownLine {
+    position: absolute;
+    width: 0.125rem;
+    height: 9.4375rem;
+    top: 54.5625rem;
+    background: linear-gradient(#a8dcf2,#ffffff00);
+    transform: rotate(180deg);
+}
+
+
+
+#lateralLeftLine {
+    position: absolute;
+    width: 290px;
+    height: 0px;
+    left: -1.4375rem;   
+    border: 2px solid #FFFFFF;
+}
+
 .titles {
     position: absolute;
     width: 72.5625rem;
@@ -265,9 +368,33 @@ top: 0.4125rem;
 .entrezEnContact {
     position: absolute;
     width: 45.96875rem;
-    height: 3.580rem;
-    left: calc(50% - 45.96875rem/2 - 0.078125rem);
-    top: 40rem;
+    height: 3.58rem;
+    left: calc(50% - 40.3875rem/2 - 0.078125rem);
+    top: 46rem;
+}
+
+#vectorContactLeftUp {
+    position: absolute;
+    left: -3.0625rem;
+    top: -4rem;
+}
+
+#vectorContactLeftDown  {
+    position: absolute;
+    left: -3.0625rem;
+    top: 6.580625rem;
+}
+
+#vectorcontactRightUp {
+    position: absolute;
+    left: 42.888125rem;
+    top: -4rem;;    
+}
+
+#vectorContactRightDown {
+    position: absolute;
+    left: 42.888125rem;
+    top: 6.580625rem;  
 }
 
 
@@ -344,38 +471,105 @@ top: 0.4125rem;
     color: #12499F; 
 }
 
-h2 {
+.description h2 {
+    position: relative;
     font-family: var(--font-family-bebas_neue);
     font-size: 5rem;
-    color: #12499F;
+    color: #ffffff;
     font-weight: 400;
     text-align: left;
     margin-bottom: 7rem;
+    left: 0.15rem;;
+    width: 47rem;
+    margin-top: 2rem ;
+}
 
+#aboutMeLeftUp {
+    left: -3rem;
+    top: 12rem;
+    
+}
+#aboutMeLefDown {
+    left: -3rem;
+    top: 43rem;
+    
+}
+#aboutMeRightUp {
+    left: 73rem;
+    top: 12rem;
+    
+}
+#aboutMeRightDown {
+    left: 73rem;
+    top: 43rem;
+    
 }
 
 p {
     font-family: 'Roboto Mono', monospace;
     font-size: var(--font-size-m);
     position: relative;
-    display: flex;
     flex-direction: column;
-    width: 54%;
+    width: 100%;
     line-height: 3.25rem;
+    color: white;
+    left: 0.15rem;
+    top: -3rem;
 }
 
 .aboutMe {
     position: relative;
     display: flex;
-    flex-direction: column; 
-    margin: 10%;
+    flex-direction: row; 
+    width: 100%;
+    height: 100%;
+    background: linear-gradient( 0deg, #02738d 5.76%,
+    #187590 14.27%, #167d96 22.57%, 
+    #0183a1 28.77%, #048ca9 43.53%, #2c96b1 65.45%,
+    #02a0c0 80.68%, #02a4c5 92.87%);
+    padding-bottom: 7%;
+}
+
+.pointsAboutMe {
+    top: 13.6875rem;
+    display: flex;
+    flex-direction: column;
+}
+
+
+.aboutMe>*{
+    display: flex;
+}
+
+.description{
+    flex-direction: column;
+    position: relative;
+    top: 1rem;
+    left: -81.4rem;
+    width: 100%;
+}
+
+.pAboutMe strong {
+    display: inline !important;
+}
+
+span {
+    text-shadow: -2px 3px 5px #16e8fa, 1px -3px 5px #16e8fa, 3px 0px 5px #FA5D29, -3px 0px 5px #16e8fa;
+}
+
+.central-frame-aboutMe {
+    position: absolute;
+    width: 86.75rem;
+    height: 60.375rem;
+    border: 1px solid rgba(255, 255, 255, 0.2);
+    left: 1.375rem;
+    top: 1.6875rem;
 }
 
 .photoProfil {
     position: absolute;
     left: 65%;
-    top: 39%;
-    z-index: 1;
+    margin-top: 16%;
 }
 
 footer {
@@ -397,8 +591,14 @@ footer {
         line-height: 7rem;
         color: #12499F;
         padding: 3%;
+        margin-bottom: 10%;
         border: 18px solid #16e8fa;
         left: 15rem;
+}
+
+#footerEmailContact {
+    font-size: var(--font-size-m);
+    margin-bottom: -30% ;
 }
 
 .contactometre {
