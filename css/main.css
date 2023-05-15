@@ -1,0 +1,418 @@
+:root {
+    --black: rgba(0, 0, 0, 1);
+    --white2: rgba(255, 255, 255, 0.851);
+    --white: rgba(255, 255, 255, 1);
+
+    --font-size-m: 20px;
+    --font-size-l: 24px;
+    --font-size-xl: 36px;
+    --font-size-xxl: 128px;
+
+    --font-family-bebas_neue: "Bebas Neue";
+}
+
+.bebasneue-normal-white-20px {
+    color: var(--white);
+    font-family: var(--font-family-bebas_neue);
+    font-size: var(--font-size-m);
+    font-weight: 400;
+    font-style: normal;
+}
+
+body {
+    font-size: 62.5%;
+    width: 90rem;
+	height: 64rem;
+}
+
+.home {
+    width: 90rem;
+	height: 64rem;
+    position: relative;
+    background: linear-gradient(
+        180deg, #02738d 5.76%, #187590 14.27%, 
+        #167d96 22.57%, #0183a1 28.77%, 
+        #048ca9 43.53%, #2c96b1 65.45%, 
+        #02a0c0 80.68%, #02a4c5 92.87%);
+    background-color: rgba(255,255,255,1);
+    border: 1px none;
+    overflow: hidden;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-between;
+}
+
+#technohand {
+    display: grid;
+    /*position:fixed;*/
+    right: 0;
+    bottom: 0;
+    width: 74.875rem;
+    min-height: 55.5rem;
+    left: calc(50% - 74.875rem/2 - 0.25rem);
+    top: 3rem;
+    z-index: -auto;
+    
+}
+
+.central-ellipse {
+    background: linear-gradient(
+        180deg, #017284 6.76%, #017486 11.27%, 
+        #017F91 27.57%, #018597 32.77%, 
+        #01879A 39.53%, #0191A3 50.45%, 
+        #01AABD 90.68%, #01AABD 99.87%);
+    border-radius: 50.375rem/51.96875rem;
+    mix-blend-mode: saturation;
+    position: absolute;
+    width: 132.75rem;
+    height: 132.0375rem;
+    left: -5.375rem;
+    top: -22rem ;
+}
+
+
+header {
+    background-color: transparent;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    gap: 42.25rem;
+    height: 4.125rem;   
+    left: 9.375rem;
+    top: 1.6875rem;
+    width: 71.125rem;
+    position: fixed;
+    font-family: var(--font-family-bebas_neue);
+    font-size: var(--font-size-m);
+    color: #16e8fa;
+    font-weight: 400;
+    line-height: 1.8125rem;
+    text-align: center;
+    z-index: 2;
+    
+}
+
+.logo-name .name {
+    display: flex;
+    flex-direction: column;
+    width: max-content;
+}
+
+.headerComposants {
+position: absolute;
+width: max-content;
+top: 1.625em;
+display: flex;
+align-items: center;
+}
+
+.line {
+position: absolute;
+border-top: 3px solid;
+color: #16e8fa;
+top: 0.4125rem;
+}
+
+.menu {
+    display: flex;
+    flex-direction: row;
+    width: 30.375rem;
+    gap: 1.8125rem;
+    justify-content: space-evenly;
+}
+
+#jose {
+    width: 4.75rem;
+}
+
+#apropos {
+    width: 3.6875rem;
+}
+
+#competences {
+    width: 5.4375rem;
+}
+
+#experiences {
+    width: 4.625rem;
+}
+#contact {
+    width: 3.75rem;
+}
+
+.central-frame {
+    position: absolute;
+    width: 86.75rem;
+    height: 60.375rem;
+    border: 1px solid rgba(255, 255, 255, 0.2);
+    left: 1.375rem;
+    top: 1.6875rem;
+}
+
+/*.anglesFrame {
+    position: absolute;
+    width: 2.0625rem;
+    height: 2.0625rem;
+}
+
+.vector {
+    position: relative;
+    width: 2.0625rem;
+    height: 2.0625rem;
+    border: 1px solid #FFFFFF;
+}
+
+#vectorLeftUp {
+    left: 1.375rem;
+    top: 1.6875rem
+}
+
+#vectorLeftDown {
+    left: 1.375rem;
+    top: 62.011875rem;
+    transform: rotate(-89.78deg);    
+}
+
+#vectorRightUp {
+    left: 88.0625rem;
+    top: 1.6875rem;
+    transform: matrix(-1, 0, 0, 1, 0, 0);
+}*/
+
+#vectorRigthDown {
+    left: 88.06255rem;
+    top: 62.011875rem;
+    transform: matrix(0, -1, -1, 0, 0, 0);    
+}
+.titles {
+    position: absolute;
+    width: 72.5625rem;
+    height: 9.625rem;
+    font-family: 'Bebas Neue';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 4rem;
+    line-height: 10.625rem;
+    display: flex;
+    align-items: center;
+    text-align: center;
+    color: #FFFFFF;
+    letter-spacing: 0.045em;
+}
+
+.webdev {
+    left: 9.9375rem;
+    top: 15.625rem;
+}
+
+.web3 {
+    left: 42rem;
+    top: 26.75rem;
+    color: rgba(255, 255, 255, 0.65);
+}
+
+.web3Ellipse  {
+    left: 52.8125rem;
+    top: 26.75rem;
+}
+
+.titlesEllipse {
+    background: transparent;
+    border-radius: 50%;
+    box-sizing: border-box;
+    position: absolute;
+    width: 2.125rem;
+    height: 2.0625rem;   
+    border: 4px solid #FFFFFF;
+}
+
+#webdevEllipse {
+    left: 50.8125rem;
+    top: 3.875rem;
+}
+
+#iaEllipse {
+    left: -4.1875rem;
+    top: 3.4rem;
+    border: 4px solid rgba(255, 255, 255, 0.65);
+}
+
+.points {
+    position: relative;
+    width: 90rem;
+    height: 35.4375rem;
+    top: -40.3125rem;   
+}
+
+.dots {
+    width: max-content;
+    font-family: 'Bebas Neue';
+    font-style: normal;
+    font-weight: 400;
+    font-size: var(--font-size-m);
+    line-height: 1.5rem;
+    display: flex;
+    align-items: center;
+    text-align: center;
+    letter-spacing: 2.51em;
+    text-transform: lowercase;
+    color: #FFFFFF;
+    opacity: 0.2;
+}
+
+.entrezEnContact {
+    position: absolute;
+    width: 45.96875rem;
+    height: 3.580rem;
+    left: calc(50% - 45.96875rem/2 - 0.078125rem);
+    top: 40rem;
+}
+
+
+#email {
+    background: transparent;
+    border: none;
+    height: max-content;
+    width: 24.0625rem;
+    height: 2.8125rem;    
+    font-family: 'Bebas Neue';
+    font-style: normal;
+    font-weight: 400;
+    font-size: var(--font-size-xl);
+    line-height: 2.6875;
+    display: flex;
+    align-items: center;
+    text-align: center;
+    color: #FFFFFF;
+    text-align: left; 
+}
+
+#yourName {
+    width: 14.3125rem;
+    height: 2.8125rem;    
+    font-family: 'Bebas Neue';
+    font-style: normal;
+    font-weight: 400;
+    font-size: var(--font-size-xl);
+    line-height: 2.6875;
+    display: flex;
+    align-items: center;
+    text-align: center;
+    text-transform: lowercase;
+    color: #FFFFFF; 
+}
+
+#yourNameLine {
+    width: 24.0625rem;
+    height: 0px;
+    border: 3px solid #FFFFFF;
+}
+
+.discoverMe {
+    position: absolute;
+    width: 14.25rem;
+    height: 3.3rem;
+    left: 27.6875rem;
+    top: 0.15rem;
+    background: #FFFFFF;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    font-family: 'Bebas Neue';
+    color: #12499F;
+    font-style: normal;
+    font-size: xx-large;
+    line-height: 2.6875rem;
+    text-align: center;
+    border: none;
+}
+
+#discoverMe {
+    width: 11rem;
+    height: 2.6875rem;
+    font-family: var(--font-family-bebas_neue);
+    font-style: normal;
+    font-weight: 400;
+    font-size: var(--font-size-xl);
+    line-height: 2.6875rem;
+    display: flex;
+    align-items: center;
+    text-align: center;
+    color: #12499F; 
+}
+
+h2 {
+    font-family: var(--font-family-bebas_neue);
+    font-size: 5rem;
+    color: #12499F;
+    font-weight: 400;
+    text-align: left;
+    margin-bottom: 7rem;
+
+}
+
+p {
+    font-family: 'Roboto Mono', monospace;
+    font-size: var(--font-size-m);
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    width: 54%;
+    line-height: 3.25rem;
+}
+
+.aboutMe {
+    position: relative;
+    display: flex;
+    flex-direction: column; 
+    margin: 10%;
+}
+
+.photoProfil {
+    position: absolute;
+    left: 65%;
+    top: 39%;
+    z-index: 1;
+}
+
+footer {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    width: 14rem;
+}
+
+.fooContact {
+        position: absolute;
+        font-family: var(--font-family-bebas_neue);
+        font-size: 7rem;
+        display: flex;
+        font-weight: 400;
+        flex-direction: row;
+        flex-wrap: wrap;
+        width: 15%;
+        line-height: 7rem;
+        color: #12499F;
+        padding: 3%;
+        border: 18px solid #16e8fa;
+        left: 15rem;
+}
+
+.contactometre {
+    position: absolute;
+    font-family: var(--font-family-bebas_neue);
+    font-size: 3rem;
+    display: flex;
+    font-weight: 400;
+    flex-direction: row;
+    flex-wrap: wrap;
+    width: 15%;
+    line-height: 7rem;
+    color: #12499F;
+    padding: 3%;
+    left: 55rem;
+    margin-top: 10%;
+}   
