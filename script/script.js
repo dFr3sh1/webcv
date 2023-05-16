@@ -5,6 +5,7 @@ function contactIncrease () {
     let getCounter = localStorage.getItem("Counter"); //Recupère la valeur de prénom dans la machine en local
     let spanCounter = document.querySelector("#Display") //Sélectionne le span avec l'id name
     //spanCounter.textContent = getName; //Remplace le contenu text de ce span par la valeur
+    spanCounter.textContent = counter
     if(getCounter != null) {
         //getName = getName + 1; Pour compter un nouveau valeur dans la variable getname
         getCounter++;//une autre façon de compter une nouvelle valeur dans la varibale getName
@@ -25,4 +26,4 @@ function displayName (){
 
 let buttonDisplayName = document.querySelector("#Display") //Sélecionne le button avec l'id Display
 buttonDisplayName.addEventListener ("click", displayName ) //met en place un gestionnaire d'évènements
-z
+document.addEventListener("DOMContentLoaded", contactIncrease )

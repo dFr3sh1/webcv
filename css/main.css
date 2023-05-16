@@ -24,15 +24,14 @@ body {
     display: flex;
     font-size: 62.5%;
     width: 90rem;
-    height: 64rem;
     background: linear-gradient( 180deg, #02738d 5.76%, #187590 14.27%, #167d96 22.57%, #0183a1 28.77%, #048ca9 43.53%, #2c96b1 65.45%, #02a0c0 80.68%, #02a4c5 92.87%);
     flex-direction: column;
+    scroll-behavior: smooth;
 
 }
 
 .home {
     width: 90rem;
-	height: 64rem;
     position: relative;
     background: linear-gradient(rgb(0 114 142) -0.24%,
     rgb(2 123 152) 10.27%, rgb(1 137 166) 24.57%, 
@@ -53,8 +52,6 @@ body {
     /*position:fixed;*/
     right: 0;
     bottom: 0;
-    width: 74.875rem;
-    min-height: 55.5rem;
     left: calc(50% - 74.875rem/2 - 0.25rem);
     top: 3rem;
     z-index: -auto;
@@ -175,7 +172,7 @@ top: 0.4125rem;
     position: absolute;
     width: 86.75rem;
     height: 60.375rem;
-    border: 1px solid rgba(255, 255, 255, 0.2);
+    border:     ;
     left: 1.375rem;
     top: 1.6875rem;
 }
@@ -185,7 +182,6 @@ top: 0.4125rem;
     position: absolute;
     width: 2.0625rem;
     height: 2.0625rem;
-
 }
 
 .vectorLeftUp {
@@ -296,7 +292,6 @@ top: 0.4125rem;
 .titles {
     position: absolute;
     width: 72.5625rem;
-    height: 9.625rem;
     font-family: 'Bebas Neue';
     font-style: normal;
     font-weight: 400;
@@ -349,7 +344,6 @@ top: 0.4125rem;
 .points {
     position: relative;
     width: 85rem;
-    height: 35.4375rem;
     top: -40.3125rem;   
 }
 
@@ -371,7 +365,6 @@ top: 0.4125rem;
 .entrezEnContact {
     position: absolute;
     width: 45.96875rem;
-    height: 3.58rem;
     left: calc(50% - 40.3875rem/2 - 0.078125rem);
     top: 46rem;
 }
@@ -404,9 +397,7 @@ top: 0.4125rem;
 #email {
     background: transparent;
     border: none;
-    height: max-content;
     width: 24.0625rem;
-    height: 2.8125rem;    
     font-family: 'Bebas Neue';
     font-style: normal;
     font-weight: 400;
@@ -419,9 +410,8 @@ top: 0.4125rem;
     text-align: left; 
 }
 
-#yourName {
-    width: 14.3125rem;
-    height: 2.8125rem;    
+.yourName {
+    width: 14.3125rem;  
     font-family: 'Bebas Neue';
     font-style: normal;
     font-weight: 400;
@@ -443,7 +433,6 @@ top: 0.4125rem;
 .discoverMe {
     position: absolute;
     width: 14.25rem;
-    height: 3.3rem;
     left: 27.6875rem;
     top: 0.15rem;
     background: #FFFFFF;
@@ -462,7 +451,6 @@ top: 0.4125rem;
 
 #discoverMe {
     width: 11rem;
-    height: 2.6875rem;
     font-family: var(--font-family-bebas_neue);
     font-style: normal;
     font-weight: 400;
@@ -525,7 +513,6 @@ p {
     display: flex;
     flex-direction: row; 
     width: 90rem;
-    height: 100%;
     background: linear-gradient( 0deg, #02738d 5.76%,
     #187590 14.27%, #167d96 22.57%, 
     #0183a1 28.77%, #048ca9 43.53%, #2c96b1 65.45%,
@@ -563,14 +550,13 @@ p {
     display: inline !important; 
 }
 
-span {
+#binininca {
     text-shadow: -2px 3px 5px #16e8fa, 1px -3px 5px #16e8fa, 3px 0px 5px #FA5D29, -3px 0px 5px #16e8fa;
 }
 
 .central-frame-aboutMe {
     position: absolute;
     width: 86.75rem;
-    height: 60.375rem;
     border: 1px solid rgba(255, 255, 255, 0.2);
     left: 1.375rem;
     top: 1.6875rem;
@@ -584,14 +570,13 @@ span {
 
 footer {
     display: flex;
-    max-width: 70rem;
-    max-height: 20rem;
+    max-width: 100%;
     flex-direction: row;
     justify-content: space-evenly;
+    padding: 5%;
 }
 
 .fooContact {
-    grid-area: 1 / 1 / 2 / 2;
     position: absolute;
     font-family: var(--font-family-bebas_neue);
     font-size: 7rem;

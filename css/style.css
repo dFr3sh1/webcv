@@ -1,0 +1,139 @@
+:root {
+    --black: rgba(0, 0, 0, 1);
+    --white2: rgba(255, 255, 255, 0.851);
+    --white: rgba(255, 255, 255, 1);
+
+    --font-size-m: 20px;
+    --font-size-l: 24px;
+    --font-size-xl: 36px;
+    --font-size-xxl: 128px;
+
+    --font-family-bebas_neue: "Bebas Neue";
+}
+
+
+.bebasneue-normal-white-20px {
+    color: var(--white);
+    font-family: var(--font-family-bebas_neue);
+    font-size: var(--font-size-m);
+    font-weight: 400;
+    font-style: normal;
+}
+
+    body {
+        display: flex;
+        font-size: 62.5%;
+        width: 90rem;
+        background: linear-gradient( 180deg, #02738d 5.76%, #187590 14.27%, #167d96 22.57%, #0183a1 28.77%, #048ca9 43.53%, #2c96b1 65.45%, #02a0c0 80.68%, #02a4c5 92.87%);
+        flex-direction: column;
+        scroll-behavior: smooth;
+        color:#FFFFFF;
+    }
+
+.central-frame {
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
+    position: fixed;
+    width: 95%;
+    border: 3px solid rgba(255, 255, 255, 0.2);
+    margin: 1.6875rem;
+} 
+
+.central-frame #video-technohand {
+    position: fixed;
+    padding-left: 19.26%;
+    padding-right: 19.26%;
+    bottom: 0;
+    z-index: -1;
+}
+
+h1 {
+    width: 72.5625rem;
+    font-family: 'Bebas Neue';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 8rem;
+    line-height: 10.625rem;
+    display: flex;
+    align-items: center;
+    text-align: center;
+    letter-spacing: -0.01em;
+}
+
+.titlesEllipse {
+    background: transparent;
+    border-radius: 50%;
+    box-sizing: border-box;
+    position: absolute;
+    width: 2.125rem;
+    height: 2.0625rem;   
+    border: 4px solid ;
+}
+
+.title-n-ellipse {
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: row;
+    justify-content: flex-end;
+    align-items: center;
+    position: absolute;
+}
+
+#webdev-title-n-ellipse {
+    width: 51rem;
+    left: 10rem;
+    top: 3rem;
+}
+
+#ia-title-n-ellipse {
+    width: 31.25rem;
+}
+
+#ia-title {
+    position: absolute;
+    top: 2rem;
+    left: 23.5rem;
+    color: rgb(255 255 255 / 65%);
+}
+
+#webdevEllipse {
+    left: 47rem;
+    color: #FFFFFF;
+}
+
+#iaEllipse {
+    left: 19.3rem;
+    top: 11.2rem;
+    color: rgb(255 255 255 / 65%);
+}
+
+.vector {
+    position: absolute;
+    width: 2.0625rem;
+    height: 2.0625rem;
+    border: 1px solid white;
+}
+
+.vectorLeftUp {
+    border-right: none;
+    border-bottom: none;
+}
+
+.vectorLeftDown {
+    border-top: none;
+    border-right: none;
+}
+
+.vectorRightUp {
+    border-left: none;
+    border-bottom: none;
+}
+
+.vectorRigthDown {
+    border-left: none;
+    border-top: none; 
+}
+
