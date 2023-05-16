@@ -18,7 +18,7 @@ function contactIncrease () {
 
 function displayName (){
     alert("Clicked")  
- 
+
 }
 
 
