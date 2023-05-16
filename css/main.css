@@ -517,7 +517,7 @@ p {
     line-height: 3.25rem;
     color: white;
     left: 2.375rem;
-    top: 1rem;
+    top: -1rem;
 }
 
 .aboutMe {
@@ -579,7 +579,7 @@ span {
 .photoProfil {
     position: absolute;
     left: 65%;
-    margin-top: 17%;
+    margin-top: 18%;
 }
 
 footer {
