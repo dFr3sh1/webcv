@@ -22,6 +22,7 @@
 
 body {
     display: flex;
+    flex-direction: column;
     font-size: 62.5%;
     width: 100%;
     background: linear-gradient( 180deg, #02738d 5.76%, #187590 14.27%, #167d96 22.57%, #0183a1 28.77%, #048ca9 43.53%, #2c96b1 65.45%, #02a0c0 80.68%, #02a4c5 92.87%);
@@ -29,6 +30,7 @@ body {
     scroll-behavior: smooth;
     color:#FFFFFF;
 }
+
 /* Header Navbar starts */
 nav{
     background-color: transparent;
@@ -38,7 +40,7 @@ nav{
     align-items: center;
     height: 4.125rem;   
     left: 17.2%;
-    top: 1.2%;
+    top: .18%;
     width: 70%;
     position: fixed;
     font-family: var(--font-family-bebas_neue);
@@ -159,22 +161,22 @@ width: 100%;
 
 .points {
     position: absolute;
-    width: 85rem;
+    width: 85%;
+    left: 8%;
+    top:17%;
     overflow: hidden;
 }
 
 .dots {
-    width: 85rem;
-    width: 85rem;
     font-family: 'Bebas Neue';
     font-style: normal;
     font-weight: 400;
     font-size: var(--font-size-m);
-    line-height: 1.3rem;
+    line-height: 2rem;
     display: flex;
     align-items: center;
     text-align: center;
-    letter-spacing: 2.51em;
+    letter-spacing: 2rem;
     opacity: 0.2;
 }
 
@@ -182,10 +184,10 @@ width: 100%;
 
 
 
-/* Home page starts */
+/* Home Section starts */
 
 body main .central-frame {
-    position: absolute;
+    position: relative;
     display: flex;
     flex-wrap: wrap;
     flex-direction: column;
@@ -198,6 +200,7 @@ body main .central-frame {
     top: 2%;
     right: 2%;
     bottom: 2%;
+    padding-bottom: 6.4%;
 } 
 
 main .central-frame #video-technohand {
@@ -446,8 +449,124 @@ main .central-frame .contactMe #vectorContactRightDown {
     bottom: -173%;  
 }
 
+/* Home Section ends */
+
+/* About Section starts*/
+
+body main .aboutMe {
+    position: relative;
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
+    width: 100%;
+}
+
+.description h2 {
+    position: relative;
+    font-family: var(--font-family-bebas_neue);
+    font-size: 5rem;
+    color: #ffffff;
+    font-weight: 400;
+    text-align: left;
+    margin-bottom: 7rem;
+    left: -3rem;;
+    width: 47rem;
+    margin-top: 2rem ;
+}
+
+#aboutMeLeftUp {
+    left: -3rem;
+    top: 12rem;
+    
+}
+#aboutMeLefDown {
+    left: -3rem;
+    top: 44rem;
+    
+}
+#aboutMeRightUp {
+    left: 68.5rem;
+    top: 12rem;
+    
+}
+#aboutMeRightDown {
+    left: 68.5rem;
+    top: 44rem;
+    
+}
+
+p {
+    font-family: 'Roboto Mono', monospace;
+    font-size: var(--font-size-m);
+    position: relative;
+    flex-direction: column;
+    width: 100%;
+    line-height: 3.25rem;
+    color: white;
+    left: 2.375rem;
+    top: -1rem;
+}
+
+.aboutMe {
+    position: relative;
+    display: flex;
+    flex-direction: row; 
+    width: 90rem;
+    /*background: linear-gradient( 0deg, #02738d 5.76%,
+    #187590 14.27%, #167d96 22.57%, 
+    #0183a1 28.77%, #048ca9 43.53%, #2c96b1 65.45%,
+    #02a0c0 80.68%, #02a4c5 92.87%);*/
+    padding-bottom: 7%;
+    overflow: hidden;
+    
+}
+
+.pointsAboutMe {
+    top: -32.3125rem;
+    display: flex;
+    flex-direction: column;
+    width: 85rem;
+    left: -10rem;
+}
 
 
+.aboutMe>*{
+    display: flex;
+    flex-direction: column;
+    align-content: space-between;
+    flex-wrap: wrap;
+}
 
+.description{
+    flex-direction: column;
+    position: relative;
+    top: 2rem;
+    left: 12.075rem;
+    width: 47%;
+}
 
-/* Home page ends */
+.pAboutMe strong {
+    display: inline !important; 
+}
+
+#binininca {
+    text-shadow: -2px 3px 5px #16e8fa, 1px -3px 5px #16e8fa, 3px 0px 5px #FA5D29, -3px 0px 5px #16e8fa;
+}
+
+.central-frame-aboutMe {
+    position: absolute;
+    width: 86.75rem;
+    border: 1px solid rgba(255, 255, 255, 0.2);
+    left: 1.375rem;
+    top: 1.6875rem;
+}
+
+.photoProfil {
+    position: absolute;
+    left: 65%;
+    margin-top: 18%;
+}
+
+/* About Section ends*/
