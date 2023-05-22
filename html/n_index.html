@@ -10,122 +10,270 @@
     <link href="https://fonts.googleapis.com/css2?family=Roboto+Mono:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;1,100;1,200;1,300;1,400;1,500;1,600;1,700&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="/css/style.css">
     <title>Binininca</title>
+    <style>
+        ::placeholder {
+            color: white;
+            opacity: 1; /* Firefox */
+        }
+
+        :-ms-input-placeholder { /* Internet Explorer 10-11 */
+            color: white;
+        }
+        
+        ::-ms-input-placeholder { /* Microsoft Edge */
+            color: white;
+        }
+    </style>
 </head>
 <body>
     <header>
+        <nav>
+            <div class="logo-name">
+                <a href="#vectorContactRightDown">
+                    <div class="logo-name line" id="jose"></div>
+                    <div class="logo-name headerComposants">José Cuacés</div>
+                </a>
+            </div>            
+            <div class="menu">
+                    <a href="#webdevEllipse" >
+                        <div class="line" id="apropos"></div>
+                        <div class="headerComposants"  >accueil</div>
+                    </a>
+
+                    <a href="#skills">
+                        <div class="line" id="competences"></div>
+                        <div class="headerComposants" >compétences</div>
+                    </a>
+                        
+                    <a href="#experienceSection">
+                        <div class="line" id="experiences"></div>
+                        <div class="headerComposants"  >expérience</div>
+                    </a>
+
+                    <a href="mailto:josecuaces@gmail.com">
+                        <div class="line" id="contact" ></div>
+                        <div class="headerComposants" >contact</div>        
+                    </a>
+        </nav>
     </header>
     <main>
-        <div class="central-frame">
-            <video autoplay muted loop id="video-technohand">
-                <source src="/videos/technoHand.mp4" type="video/mp4">
-            </video>
-            <div class="title-n-ellipse" id="webdev-title-n-ellipse">
-                <h1 >WEB DEVELOPMENT</h1>
-                <div class="titlesEllipse" id="webdevEllipse" ></div>
+        <section>
+            <div class="central-frame">
+                <video autoplay muted loop id="video-technohand">
+                    <source src="/videos/technoHand.mp4" type="video/mp4">
+                </video>
+                <div class="central-titles">
+                    <div class="title-n-ellipse" id="webdev-title-n-ellipse">
+                        <h1 >WEB DEVELOPMENT</h1>
+                        <div class="titlesEllipse" id="webdevEllipse" ></div>
+                    </div>
+                    <div class="title-n-ellipse" id="ia-title-n-ellipse">
+                        <div class="titlesEllipse" id="iaEllipse"></div>
+                        <h1 id="ia-title">IA & WEB3</h1>
+                    </div>
+                </div>
+                <div id="vector">
+                    <div class="vector vectorLeftUp" id="vectorLeftUp" ></div>
+                    <div class="vector vectorLeftDown" id="vectorLeftDown"></div>
+                    <div class="vector vectorRightUp" id="vectorRightUp"></div>
+                    <div class="vector vectorRigthDown" id="vectorRightDown"></div>
+                </div>
+                <div id="lines">
+                    <div class="centralLines">
+                        <div class="centralUpLine"></div>
+                        <div class="centralDownLine"></div>
+                    </div>
+                    <div class="lateralLines" >
+                        <div id="lateralLeftLine"></div>
+                        <div id="lateralRightLine"></div>
+                    </div>
+                </div>    
+                <div class="points">
+                    <div class="dots">
+                        .....................................................................
+                    </div>
+                    <div class="dots">
+                        .....................................................................
+                    </div>
+                    <div class="dots">
+                        .....................................................................
+                    </div>
+                    <div class="dots">
+                        .....................................................................
+                    </div>
+                    <div class="dots">
+                        .....................................................................
+                    </div>
+                    <div class="dots">
+                        .....................................................................
+                    </div>
+                    <div class="dots">
+                        .....................................................................
+                    </div>
+                    <div class="dots">
+                        .....................................................................
+                    </div>
+                    <div class="dots">
+                        .....................................................................
+                    </div>
+                    <div class="dots">
+                        .....................................................................
+                    </div>
+                    <div class="dots">
+                        .....................................................................
+                    </div>
+                    <div class="dots">
+                        .....................................................................
+                    </div>
+                    <div class="dots">
+                        .....................................................................
+                    </div>
+                    <div class="dots">
+                        .....................................................................
+                    </div>
+                    <div class="dots">
+                        .....................................................................
+                    </div>
+                    <div class="dots">
+                        .....................................................................
+                    </div>
+                    <div class="dots">
+                        .....................................................................
+                    </div>
+                    <div class="dots">
+                        .....................................................................
+                    </div>
+                    <div class="dots">
+                        .....................................................................
+                    </div>
+                    <div class="dots">
+                        .....................................................................
+                    </div>
+                    <div class="dots">
+                        .....................................................................
+                    </div>
+                    <div class="dots">
+                        .....................................................................
+                    </div>
+                    <div class="dots">
+                        .....................................................................
+                    </div>
+                    <div class="overlap_group3">
+                    </div>
+                </div>
+                <div class="entrezEnContact">
+                    <div class="vector vectorLeftUp" id="vectorContactLeftUp"></div>
+                    <div class="vector vectorLeftDown" id="vectorContactLeftDown"></div>
+                    <div class="vector vectorRightUp" id="vectorcontactRightUp"></div>
+                    <div class="vector vectorRigthDown" id="vectorContactRightDown"></div>
+                    <div class="yourName">
+                        <form action="" method="post">
+                            <input type="email" id="email" name="email" placeholder="ENTREZ VOTRE EMAIL">
+                            <div id="yourNameLine" ></div>
+                            <input type="submit" class="discoverMe" value="DÉCOUVREZ-MOI" >
+                        </form>
+                    </div>
+                </div>
             </div>
-            <div class="title-n-ellipse" id="ia-title-n-ellipse">
-                <div class="titlesEllipse" id="iaEllipse"></div>
-                <h1 id="ia-title">IA & WEB3</h1>
-            </div>    
-            <div class="vector vectorLeftUp" id="vectorLeftUp" ></div>
-            <div class="vector vectorLeftDown" id="vectorLeftDown"></div>
-            <div class="vector vectorRightUp" id="vectorRightUp"></div>
-            <div class="vector vectorRigthDown" id="vectorRigthDown"></div>
-            <div class="centralLines">
-                <div class="centralUpLine"></div>
-                <div class="centralDownLine"></div>
-            </div>
-            <div class="lateralLines" >
-                <div id="lateralLeftLine"></div>
-                <div id="lateralRightLine"></div>
-            </div>
-            <div class="points">
-                <div class="dots">
-                    .....................................................................
-                </div>
-                <div class="dots">
-                    .....................................................................
-                </div>
-                <div class="dots">
-                    .....................................................................
-                </div>
-                <div class="dots">
-                    .....................................................................
-                </div>
-                <div class="dots">
-                    .....................................................................
-                </div>
-                <div class="dots">
-                    .....................................................................
-                </div>
-                <div class="dots">
-                    .....................................................................
-                </div>
-                <div class="dots">
-                    .....................................................................
-                </div>
-                <div class="dots">
-                    .....................................................................
-                </div>
-                <div class="dots">
-                    .....................................................................
-                </div>
-                <div class="dots">
-                    .....................................................................
-                </div>
-                <div class="dots">
-                    .....................................................................
-                </div>
-                <div class="dots">
-                    .....................................................................
-                </div>
-                <div class="dots">
-                    .....................................................................
-                </div>
-                <div class="dots">
-                    .....................................................................
-                </div>
-                <div class="dots">
-                    .....................................................................
-                </div>
-                <div class="dots">
-                    .....................................................................
-                </div>
-                <div class="dots">
-                    .....................................................................
-                </div>
-                <div class="dots">
-                    .....................................................................
-                </div>
-                <div class="dots">
-                    .....................................................................
-                </div>
-                <div class="dots">
-                    .....................................................................
-                </div>
-                <div class="dots">
-                    .....................................................................
-                </div>
-                <div class="dots">
-                    .....................................................................
-                </div>
-                <div class="overlap_group3">
-                </div>
-            </div>
-            <div class="entrezEnContact">
-                <div class="vector vectorLeftUp" id="vectorContactLeftUp"></div>
-                <div class="vector vectorLeftDown" id="vectorContactLeftDown"></div>
-                <div class="vector vectorRightUp" id="vectorcontactRightUp"></div>
-                <div class="vector vectorRigthDown" id="vectorContactRightDown"></div>
-                <div class="yourName">
-                    <form action="" method="post">
-                        <input type="email" id="email" name="email" placeholder="ENTREZ VOTRE EMAIL">
-                        <div id="yourNameLine" ></div>
-                        <input type="submit" class="discoverMe" value="DÉCOUVREZ-MOI" >
-                    </form>
+        </section>
+        <!--div class="aboutMe">
+            <div class="central-frame-aboutMe" ></div>
+            <div  class="description">
+                <div class="vector vectorLeftUp" id="aboutMeLeftUp"></div>
+                <div class="vector vectorLeftDown" id="aboutMeLefDown"></div>
+                <div class="vector vectorRightUp" id="aboutMeRightUp"></div>
+                <div class="vector vectorRigthDown" id="aboutMeRightDown"></div>
+                
+                <h2 id="aboutMeSection">à propos</h2>
+                <p class="pAboutMe">
+                    En kankuamo, langue parlée par les indigènes Kankuamos du Nord 
+                    de la Colombie, <span id="binininca">"binininca"</span> 
+                    est le mot pour décrire les forces 
+                    de la nature et sa relation avec la transcendence de l’esprit. 
+                    Ce qui représente le virage de ma vie professionnelle ayant su 
+                    harmoniser plus de dix ans d’expérience dans l’e-commerce et 
+                    l’import/export avec ma passion, l’apprentissage de nouvelles 
+                    technologies.
+                </p>
+                <div class="points pointsAboutMe">
+                    <div class="dots">
+                        .....................................................................
+                    </div>
+                    <div class="dots">
+                        .....................................................................
+                    </div>
+                    <div class="dots">
+                        .....................................................................
+                    </div>
+                    <div class="dots">
+                        .....................................................................
+                    </div>
+                    <div class="dots">
+                        .....................................................................
+                    </div>
+                    <div class="dots">
+                        .....................................................................
+                    </div>
+                    <div class="dots">
+                        .....................................................................
+                    </div>
+                    <div class="dots">
+                        .....................................................................
+                    </div>
+                    <div class="dots">
+                        .....................................................................
+                    </div>
+                    <div class="dots">
+                        .....................................................................
+                    </div>
+                    <div class="dots">
+                        .....................................................................
+                    </div>
+                    <div class="dots">
+                        .....................................................................
+                    </div>
+                    <div class="dots">
+                        .....................................................................
+                    </div>
+                    <div class="dots">
+                        .....................................................................
+                    </div>
+                    <div class="dots">
+                        .....................................................................
+                    </div>
+                    <div class="dots">
+                        .....................................................................
+                    </div>
+                    <div class="dots">
+                        .....................................................................
+                    </div>
+                    <div class="dots">
+                        .....................................................................
+                    </div>
+                    <div class="dots">
+                        .....................................................................
+                    </div>
+                    <div class="dots">
+                        .....................................................................
+                    </div>
+                    <div class="dots">
+                        .....................................................................
+                    </div>
+                    <div class="dots">
+                        .....................................................................
+                    </div>
+                    <div class="dots">
+                        .....................................................................
+                    </div>
+                    <div class="overlap_group3">
+                    </div>
                 </div>
             </div>
-        </div>
+            <div>
+                <img class="photoProfil" src="/img/photoProfiArctic.webp" alt="photo de Jose Cuaces" width="300px">
+            </div>
+        </div--
+        >
     </main>
     <footer>
     </footer>

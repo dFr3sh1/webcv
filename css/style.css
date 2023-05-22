@@ -20,96 +20,115 @@
     font-style: normal;
 }
 
-    body {
-        display: flex;
-        font-size: 62.5%;
-        width: 90rem;
-        background: linear-gradient( 180deg, #02738d 5.76%, #187590 14.27%, #167d96 22.57%, #0183a1 28.77%, #048ca9 43.53%, #2c96b1 65.45%, #02a0c0 80.68%, #02a4c5 92.87%);
-        flex-direction: column;
-        scroll-behavior: smooth;
-        color:#FFFFFF;
-    }
-
-.central-frame {
+body {
     display: flex;
-    flex-wrap: wrap;
+    font-size: 62.5%;
+    width: 100%;
+    background: linear-gradient( 180deg, #02738d 5.76%, #187590 14.27%, #167d96 22.57%, #0183a1 28.77%, #048ca9 43.53%, #2c96b1 65.45%, #02a0c0 80.68%, #02a4c5 92.87%);
     flex-direction: column;
-    justify-content: space-around;
-    align-items: center;
-    position: fixed;
-    width: 95%;
-    border: 3px solid rgba(255, 255, 255, 0.2);
-    margin: 1.6875rem;
-} 
-
-.central-frame #video-technohand {
-    position: fixed;
-    padding-left: 19.26%;
-    padding-right: 19.26%;
-    bottom: 0;
-    z-index: -1;
+    scroll-behavior: smooth;
+    color:#FFFFFF;
 }
-
-h1 {
-    width: 72.5625rem;
-    font-family: 'Bebas Neue';
-    font-style: normal;
-    font-weight: 400;
-    font-size: 8rem;
-    line-height: 10.625rem;
+/* Header Navbar starts */
+nav{
+    background-color: transparent;
     display: flex;
-    align-items: center;
-    text-align: center;
-    letter-spacing: -0.01em;
-}
-
-.titlesEllipse {
-    background: transparent;
-    border-radius: 50%;
-    box-sizing: border-box;
-    position: absolute;
-    width: 2.125rem;
-    height: 2.0625rem;   
-    border: 4px solid ;
-}
-
-.title-n-ellipse {
-    display: flex;
-    flex-wrap: wrap;
     flex-direction: row;
-    justify-content: flex-end;
+    justify-content: space-between;
     align-items: center;
-    position: absolute;
-    top: 11rem;
+    height: 4.125rem;   
+    left: 17.2%;
+    top: 1.2%;
+    width: 70%;
+    position: fixed;
+    font-family: var(--font-family-bebas_neue);
+    font-size: var(--font-size-m);
+    color: #ffffff;
+    font-weight: 400;
+    line-height: 1.8125rem;
+    text-align: center;
+    box-shadow: 1px 1px 4px 0 rgba(0, 0, 0, 0.1);
+    z-index: 3;
+    background-color: rgba(255, 255, 255, 0.2);
+    backdrop-filter: blur(1px);
 }
 
-#webdev-title-n-ellipse {
-    width: 51rem;
-    left: 10rem;
-    top: 3rem;
+a:link {
+    color: white;
 }
 
-#ia-title-n-ellipse {
-    width: 31.25rem;
+a:visited {
+    color: #ffffff;
 }
 
-#ia-title {
-    position: absolute;
-    top: 2rem;
-    left: 23.5rem;
-    color: rgb(255 255 255 / 65%);
+a:hover .line, a:hover .headerComposants {
+    color: #16e8fa;
 }
 
-#webdevEllipse {
-    left: 47rem;
-    color: #FFFFFF;
+a:active {
+    color:#16e8fa;
 }
 
-#iaEllipse {
-    left: 19.3rem;
-    top: 11.2rem;
-    color: rgb(255 255 255 / 65%);
+
+.logo-name {
+    display: flex;
+    flex-direction: column;
+    width: max-content;
+    margin-left: 9%;
 }
+
+.headerComposants {
+width: max-content;
+display: flex;
+align-items: center;
+}
+
+a { text-decoration: none; }
+
+.line {
+position: absolute;
+border-top: 3px solid;
+color: #ffffff;
+top: 0.4125rem;
+width: 100%;
+}
+
+.menu {
+    display: flex;
+    flex-direction: row;
+    gap: 10%;
+    align-items: center;
+    top: 0rem;
+    justify-content: space-evenly;
+    margin-right: 12%;
+
+}
+
+#jose {
+    width: 5.8%;
+    left: 0.4%;
+}
+
+#apropos {
+    width: 3.7%;
+}
+
+#competences {
+    width: 6.5%;
+}
+
+#experiences {
+    width: 5.5%;
+}
+#contact {
+    width: 4%;
+}
+
+
+
+/* Header Navbar ends*/
+
+/* General Composants starts */
 
 .vector {
     position: absolute;
@@ -139,9 +158,9 @@ h1 {
 }
 
 .points {
-    position: relative;
+    position: absolute;
     width: 85rem;
-    top: 11.6875rem;   
+    overflow: hidden;
 }
 
 .dots {
@@ -158,3 +177,249 @@ h1 {
     letter-spacing: 2.51em;
     opacity: 0.2;
 }
+
+/* General Composants ends */
+
+
+
+/* Home page starts */
+
+body main .central-frame {
+    position: absolute;
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
+    width: 100%;
+    height: 100%;
+    border: 1px solid rgba(255, 255, 255, 0.2);
+    left: 2%;
+    top: 2%;
+    right: 2%;
+    bottom: 2%;
+} 
+
+main .central-frame #video-technohand {
+    z-index: -1;
+}
+
+main .central-frame .central-titles {
+    position: absolute;
+    width: 100%;
+    left: 17%;
+    top: 3.55rem;
+}
+
+main .central-frame .central-titles h1 {
+    width: 100%;
+    font-family: 'Bebas Neue';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 8rem;
+    line-height: 10.625rem;
+    display: flex;
+    align-items: center;
+    text-align: center;
+    letter-spacing: -0.01em;
+}
+
+main .central-frame .central-titles .title-n-ellipse {  
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    align-items: center;
+}
+
+main .central-frame .central-titles .title-n-ellipse .titlesEllipse {
+    background: transparent;
+    border-radius: 50%;
+    box-sizing: border-box;
+    width: 2.3rem;
+    height: 2.3rem;
+    border: 4px solid;
+}
+
+main .central-frame .central-titles .title-n-ellipse  #webdev-title-n-ellipse {
+    width: 100%;
+}
+
+main .central-frame .central-titles #ia-title-n-ellipse {
+    width: 100%;
+}
+
+main .central-frame .central-titles .title-n-ellipse #ia-title {
+    position: absolute;
+    top: 38%;
+    left: 43%;
+    color: rgb(255 255 255 / 65%);
+}
+
+main .central-frame .central-titles .title-n-ellipse #webdevEllipse {
+    position: absolute;
+    color: #FFFFFF;
+    right: 58.2%; 
+}
+
+main .central-frame .central-titles .title-n-ellipse #iaEllipse {
+    position:absolute;
+    left: 38.4%;
+    top: 83%;
+    color: rgb(255 255 255 / 65%);
+}
+
+#vectorLeftUp {
+    left: -0.05%;
+    top: -0.07%;
+}
+
+#vectorLeftDown {
+    left: -0.05%;
+    bottom: -0.05%;
+}
+
+#vectorRightUp {
+    right: -0.05%;
+    top: -0.07%;;
+}
+
+#vectorRightDown {
+    right: -0.05%;
+    bottom: -0.05%;
+}
+
+.central-frame .centralLines {
+    position: absolute;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    width: 0.1875rem;
+    height: 60.4rem;
+    left: 45rem;
+    top: -28px;   
+}
+
+.central-frame .centralLines .centralUpLine {
+    position: absolute;
+    width: 0.125rem;
+    height: 9.4375rem;
+    transform: rotate(360deg);
+    background: linear-gradient(#a8dcf2,#ffffff00);
+}
+
+.central-frame .centralLines .centralDownLine {
+    position: absolute;
+    width: 0.125rem;
+    height: 9.4375rem;
+    top: 48.3rem;
+    background: linear-gradient(#a8dcf2,#ffffff00);
+    transform: rotate(180deg);
+}
+
+.central-frame .lateralLines {
+    position: absolute;
+    display: flex;
+    justify-content: space-evenly;
+    width: 90rem;
+    height: 1px;
+    left: 0px;
+    top: 45.5rem;
+}
+
+.central-frame .lateralLines #lateralRightLine {
+    position: absolute;
+    width: 18.25rem;
+    height: 0px;
+    left: 71.75rem;
+    border: 2px solid #FFFFFF;
+}
+
+.central-frame .lateralLines #lateralLeftLine {
+    position: absolute;
+    width: 290px;
+    height: 0px;
+    left: -1.4375rem;   
+    border: 2px solid #FFFFFF;
+}
+
+.central-frame .entrezEnContact {
+    position: absolute;
+    width: 45.96875rem;
+    left: calc(50% - 40.3875rem/2 - 0.078125rem);
+    top: 46rem;
+}
+
+
+#email {
+    background: transparent;
+    border: none;
+    width: 24.0625rem;
+    font-family: 'Bebas Neue';
+    font-style: normal;
+    font-weight: 400;
+    font-size: var(--font-size-xl);
+    line-height: 2.6875;
+    display: flex;
+    align-items: center;
+    text-align: center;
+    color: #FFFFFF;
+    text-align: left; 
+}
+
+.yourName {
+    width: 14.3125rem;  
+    font-family: 'Bebas Neue';
+    font-style: normal;
+    font-weight: 400;
+    font-size: var(--font-size-xl);
+    line-height: 2.6875;
+    display: flex;
+    align-items: center;
+    text-align: center;
+    text-transform: lowercase;
+    color: #FFFFFF; 
+}
+
+#yourNameLine {
+    width: 24.0625rem;
+    height: 0px;
+    border: 3px solid #FFFFFF;
+}
+
+.discoverMe {
+    position: absolute;
+    width: 14.25rem;
+    left: 27.6875rem;
+    top: 0.15rem;
+    background: #FFFFFF;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    font-family: 'Bebas Neue';
+    color: #12499F;
+    font-style: normal;
+    font-size: xx-large;
+    line-height: 2.6875rem;
+    text-align: center;
+    border: none;
+}
+
+#discoverMe {
+    width: 11rem;
+    font-family: var(--font-family-bebas_neue);
+    font-style: normal;
+    font-weight: 400;
+    font-size: var(--font-size-xl);
+    line-height: 2.6875rem;
+    display: flex;
+    align-items: center;
+    text-align: center;
+    color: #12499F; 
+}
+
+
+
+
+
+/* Home page ends */
