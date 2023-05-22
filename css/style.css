@@ -207,8 +207,8 @@ main .central-frame #video-technohand {
 main .central-frame .central-titles {
     position: absolute;
     width: 100%;
-    left: 17%;
-    top: 3.55rem;
+    left: 18.66%;
+    top: 5%;
 }
 
 main .central-frame .central-titles h1 {
@@ -244,28 +244,31 @@ main .central-frame .central-titles .title-n-ellipse  #webdev-title-n-ellipse {
     width: 100%;
 }
 
-main .central-frame .central-titles #ia-title-n-ellipse {
-    width: 100%;
-}
-
-main .central-frame .central-titles .title-n-ellipse #ia-title {
-    position: absolute;
-    top: 38%;
-    left: 43%;
-    color: rgb(255 255 255 / 65%);
-}
-
 main .central-frame .central-titles .title-n-ellipse #webdevEllipse {
     position: absolute;
     color: #FFFFFF;
     right: 58.2%; 
 }
 
-main .central-frame .central-titles .title-n-ellipse #iaEllipse {
-    position:absolute;
-    left: 38.4%;
-    top: 83%;
+main .central-frame .central-titles #ia-title-n-ellipse {
+    width: 100%;
+    display: flex;
+    align-items: center;
+}
+
+main .central-frame .central-titles .title-n-ellipse #ia-title {
+    position: absolute;
     color: rgb(255 255 255 / 65%);
+    left: 39%;
+    top: 40%;
+}
+
+main .central-frame .central-titles .title-n-ellipse #iaEllipse {
+    position: absolute;
+    color: rgb(255 255 255 / 65%);
+    left: 34%;
+    bottom:6%;
+
 }
 
 #vectorLeftUp {
