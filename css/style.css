@@ -270,27 +270,27 @@ main .central-frame .central-titles .title-n-ellipse #iaEllipse {
     bottom:6%;
 }
 
-#vectorLeftUp {
+main #vectorLeftUp {
     left: -0.05%;
     top: -0.07%;
 }
 
-#vectorLeftDown {
+main #vectorLeftDown {
     left: -0.05%;
     bottom: -0.05%;
 }
 
-#vectorRightUp {
+main #vectorRightUp {
     right: -0.05%;
     top: -0.07%;;
 }
 
-#vectorRightDown {
+main #vectorRightDown {
     right: -0.05%;
     bottom: -0.05%;
 }
 
-.central-frame .centralLines {
+main .central-frame .centralLines {
     position: absolute;
     display: flex;
     flex-direction: column;
@@ -302,7 +302,7 @@ main .central-frame .central-titles .title-n-ellipse #iaEllipse {
     bottom: 0;   
 }
 
-.central-frame .centralLines .centralUpLine {
+main .central-frame .centralLines .centralUpLine {
     position: absolute;
     width: 0.125rem;
     height: 9.4375rem;
@@ -312,7 +312,7 @@ main .central-frame .central-titles .title-n-ellipse #iaEllipse {
     
 }
 
-.central-frame .centralLines .centralDownLine {
+main .central-frame .centralLines .centralDownLine {
     position: absolute;
     width: 0.125rem;
     height: 9.4375rem;
@@ -321,24 +321,24 @@ main .central-frame .central-titles .title-n-ellipse #iaEllipse {
     transform: rotate(180deg);
 }
 
-.central-frame .lateralLines {
+main .central-frame .lateralLines {
     position: absolute;
     display: flex;
     justify-content: space-evenly;
     width: 100%;
     height: 1px;
     left: 0px;
-    bottom:30% ;
+    bottom:29.5% ;
 }
 
-.central-frame .lateralLines #lateralRightLine {
+main .central-frame .lateralLines #lateralRightLine {
     position: absolute;
     width: 18%;
     right: -2%;
     border: 2px solid #FFFFFF;
 }
 
-.central-frame .lateralLines #lateralLeftLine {
+main .central-frame .lateralLines #lateralLeftLine {
     position: absolute;
     width: 18%;
     height: 0px;
@@ -346,15 +346,15 @@ main .central-frame .central-titles .title-n-ellipse #iaEllipse {
     border: 2px solid #FFFFFF;
 }
 
-.central-frame .entrezEnContact {
+main .central-frame .contactMe {
     position: absolute;
-    width: 45.96875rem;
-    left: calc(50% - 40.3875rem/2 - 0.078125rem);
-    top: 46rem;
+    width: 50%;
+    left: calc(59% - 50%/2 - 0.078125rem);
+    bottom: 27%;
 }
 
 
-#email {
+main .central-frame .contactMe #email {
     background: transparent;
     border: none;
     width: 24.0625rem;
@@ -362,7 +362,7 @@ main .central-frame .central-titles .title-n-ellipse #iaEllipse {
     font-style: normal;
     font-weight: 400;
     font-size: var(--font-size-xl);
-    line-height: 2.6875;
+    line-height: .6875;
     display: flex;
     align-items: center;
     text-align: center;
@@ -370,13 +370,12 @@ main .central-frame .central-titles .title-n-ellipse #iaEllipse {
     text-align: left; 
 }
 
-.yourName {
-    width: 14.3125rem;  
+main .central-frame .contactMe .contactEmail {
+    width: 54%;  
     font-family: 'Bebas Neue';
     font-style: normal;
     font-weight: 400;
     font-size: var(--font-size-xl);
-    line-height: 2.6875;
     display: flex;
     align-items: center;
     text-align: center;
@@ -384,17 +383,18 @@ main .central-frame .central-titles .title-n-ellipse #iaEllipse {
     color: #FFFFFF; 
 }
 
-#yourNameLine {
-    width: 24.0625rem;
+main .central-frame .contactMe .contactEmail #yourEmailLine {
+    width: 90%;
     height: 0px;
     border: 3px solid #FFFFFF;
 }
 
-.discoverMe {
+main .central-frame .contactMe .contactEmail .discoverMe {
     position: absolute;
-    width: 14.25rem;
-    left: 27.6875rem;
-    top: 0.15rem;
+    width: 20%;
+    height: 90%;
+    right: 40%;
+    bottom: 0;
     background: #FFFFFF;
     display: flex;
     flex-direction: row;
@@ -409,7 +409,7 @@ main .central-frame .central-titles .title-n-ellipse #iaEllipse {
     border: none;
 }
 
-#discoverMe {
+main .central-frame .contactMe .contactEmail #discoverMe {
     width: 11rem;
     font-family: var(--font-family-bebas_neue);
     font-style: normal;
@@ -420,6 +420,30 @@ main .central-frame .central-titles .title-n-ellipse #iaEllipse {
     align-items: center;
     text-align: center;
     color: #12499F; 
+}
+
+main .central-frame .contactMe #vectorContactLeftUp {
+    position: absolute;
+    left: -4%;
+    top: -150%;
+}
+
+main .central-frame .contactMe #vectorContactLeftDown  {
+    position: absolute;
+    left: -4%;
+    bottom: -173%;
+}
+
+main .central-frame .contactMe #vectorcontactRightUp {
+    position: absolute;
+    right: 35%;
+    top: -150%;   
+}
+
+main .central-frame .contactMe #vectorContactRightDown {
+    position: absolute;
+    right: 35%;
+    bottom: -173%;  
 }
 
 
