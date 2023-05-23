@@ -615,10 +615,10 @@ main .skills .logos .logos-skills {
     padding: 7%;
 }
 
-main p {
+#skillsP {
     position: relative;
     width: 50%;
-    left: -7%;
+    left: -5%;
 }
 
 #logo-html {
