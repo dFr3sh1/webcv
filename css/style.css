@@ -57,9 +57,9 @@ nav{
     font-weight: 400;
     line-height: 1.8125rem;
     text-align: center;
-    box-shadow: 1px 1px 4px 0 rgba(0, 0, 0, 0.1);
+    box-shadow: 1px 1px 4px 0 rgba(0, 0, 0, 0.3);
     z-index: 3;
-    background-color: rgba(255, 255, 255, 0.2);
+    background-color: rgba(255, 255, 255, 0.1);
     backdrop-filter: blur(1px);
 }
 
@@ -562,13 +562,14 @@ main .aboutMe .description p {
     line-height: 3.25rem;
     color: white;
     left: 10%;
-    top: 0;
 }
 
 main .aboutMe #pointsAboutMe {
     position: absolute;
+    width: 90%;
     left: 2%;
-    top: 41%;   
+    top: 44%;
+    overflow: auto;   
 }
 
 
