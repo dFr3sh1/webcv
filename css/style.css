@@ -33,8 +33,8 @@ body {
     flex-direction: column;
     font-size: 62.5%;
     width: 100%;
-    background: linear-gradient( 180deg, #007795 0.76%, 
-    #0089a7 6.27%, #0090ad 7.57%, #00a5c6 15.77%, 
+    background: linear-gradient( 180deg, #007795 1.76%, 
+    #0089a7 7.27%, #0090ad 9.57%, #00a5c6 17.77%, 
     #0090ae 0.53%, #059bbd 1.45%, #00a1c1 0.68%, #00a5c6 6.87%);
     flex-direction: column;
     scroll-behavior: smooth;
