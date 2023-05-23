@@ -24,6 +24,7 @@
 
 section {
     position: relative;
+    padding-bottom: 10%;
 }
 
 body {
@@ -32,8 +33,9 @@ body {
     flex-direction: column;
     font-size: 62.5%;
     width: 100%;
-    background: linear-gradient( 180deg, #007795 3.76%, #0081a1 8.27%, #0085a5 10.57%, #008fae 16.77%, #0090ae 10.53%, #009cbb 24.45%, #00a3c5 29.68%, #00a0c0 95.87%);
-    
+    background: linear-gradient( 180deg, #007795 0.76%, 
+    #0089a7 6.27%, #0090ad 7.57%, #00a5c6 15.77%, 
+    #0090ae 0.53%, #059bbd 1.45%, #00a1c1 0.68%, #00a5c6 6.87%);
     flex-direction: column;
     scroll-behavior: smooth;
     color:#FFFFFF;
@@ -543,7 +545,7 @@ main .aboutMe .description #aboutMeSection {
     text-align: left;
     width: 30%;
     left: 10%;
-    margin-top: 15%;
+    margin-top: 10%;
 }
 
 main .aboutMe .description .paragrapheImageDiv {
@@ -554,7 +556,7 @@ main .aboutMe .description .paragrapheImageDiv {
     align-items: center;
 }
 
-main .aboutMe .description p {
+main p {
     font-family: 'Roboto Mono', monospace;
     font-size: var(--font-size-m);
     flex-direction: column;
@@ -587,6 +589,67 @@ main .aboutMe .photoProfil {
 }
 
 /* About Section ends*/
+
+
+/* Skills Section starts */
+
+main #skills .skills {
+    display: flex;
+    flex-direction: row;
+    padding-top: 10%;
+
+}
+
+main .skills .logos {
+    display: grid;
+    grid-template-areas: 
+    "first second"
+    "third forth";
+    grid-gap: 7px;
+    width: 50%;
+    padding-left: 2%;
+    padding-right: 2%;
+}
+
+main .skills .logos .logos-skills {
+    padding: 7%;
+}
+
+main p {
+    position: relative;
+    width: 50%;
+    left: -7%;
+}
+
+#logo-html {
+    grid-area: first;
+}
+
+#logo-js {
+    position: relative;
+    grid-area: second;
+    width: 78% ;
+    top: -6%;
+
+}
+
+#logo-css {
+    grid-area: third;
+    padding-left: 18%;
+}
+
+#logo-swift {
+    position: relative;
+    grid-area: forth;
+    width: 44%;
+    left: 17%;
+
+}
+
+
+
+
+/* Skills Section ends */
 
 /* Footer starts */
 
