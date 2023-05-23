@@ -493,6 +493,8 @@ body main .aboutMe {
     justify-content: space-around;
     align-items: center;
     width: 100%;
+    padding-top: 5%;
+    padding-bottom: 2%;    
 }
 
 /*main .aboutMe .central-frame-aboutMe {
@@ -520,13 +522,14 @@ main .aboutMe .description{
 
 main .aboutMe #aboutMeLeftUp {
     left: 2%;
-    top: 5%;
+    top: 10%;
     
 }
 
 main .aboutMe #aboutMeRightDown {
-    right: 2;
-    bottom: 2%;
+    position: absolute;
+    right: 2%;
+    bottom: -12%;
     
 }
 
@@ -561,13 +564,14 @@ main .aboutMe .description p {
     top: 0;
 }
 
-#pointsAboutMe {
+main .aboutMe #pointsAboutMe {
+    position: absolute;
     left: 2%;
-    top: 0;   
+    top: 41%;   
 }
 
 
-.pAboutMe strong {
+main .pAboutMe strong {
     display: inline !important; 
 }
 
@@ -575,9 +579,112 @@ main .aboutMe .description p {
     text-shadow: -2px 3px 5px #16e8fa, 1px -3px 5px #16e8fa, 3px 0px 5px #FA5D29, -3px 0px 5px #16e8fa;
 }
 
-.photoProfil {
-    left: 65%;
-    top:    ;
+main .aboutMe .photoProfil {
+    position: relative;
+    left: -25%;
 }
 
 /* About Section ends*/
+
+/* Footer starts */
+
+footer {
+    position: relative;
+    display: flex;
+    max-width: 100%;
+    flex-direction: row;
+    justify-content: space-around;
+    padding: auto;
+    padding-top: 15%;
+    padding-bottom: 5%;
+}
+
+.fooContact {
+    font-family: var(--font-family-bebas_neue);
+    font-size: 7rem;
+    display: flex;
+    font-weight: 400;
+    flex-direction: row;
+    flex-wrap: wrap;
+    width: 14.67rem;
+    line-height: 6rem;
+    color: #12499F;
+    padding: 3%;
+    border: 18px solid #16e8fa;
+    left: 9rem;
+}
+
+footer #footerEmailContact {
+    font-size: var(--font-size-m);
+    margin-top: -8%;
+    margin-bottom: -12%;
+    letter-spacing: 4.5px;
+}
+
+/*#footerCentral {
+    width: 6.67rem;
+}*/
+
+footer .contactometre {
+    display: flex;
+    font-family: var(--font-family-bebas_neue);
+    font-size: 3rem;
+    display: flex;
+    font-weight: 400;
+    flex-direction: column;
+    width: 6.67rem;
+    line-height: 7rem;
+    color: #16e8fa;
+    padding: 3%;
+    align-items: center;
+    justify-content: center;
+}   
+
+
+#Display {
+    position: relative;
+    font-family: var(--font-family-bebas_neue);
+    font-size: 9rem;
+    line-height: 7rem;
+    top: 5%;  
+}
+
+#counter {
+    position: relative;
+    font-size: 7rem;
+    line-height: 7rem;  
+    color: #12499F;
+    top: 2%;
+}
+
+#vectorContactometreLeftUp {
+    left: 65%;
+    top: 33%;       
+}
+
+#vectorContactometreLeftDown  {
+    left: 65%;
+    bottom: 10%;
+}
+
+#vectorContactometreRightUp {
+    left: 85%;
+    top: 33%;
+}
+
+#vectorContactometreRightDown {
+    left: 85%;
+    bottom: 10%;
+}
+
+footer .metricPattern {
+    position: absolute;
+    left: 69.3%;
+    top:48%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+
+/* Footer ends */
